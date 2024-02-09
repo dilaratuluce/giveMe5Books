@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Me 5 Books</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="search-part">
+        <div class="form">
+            <input type="text" id="bookName" placeholder="Enter book name, topic or author (Italy, cooking, Tolstoy...)">
+            <button onclick="fetchData()">Fetch 5 Books</button>
+        </div>
+    </div>  
+    <br>
+
+    <div class="book-items">
+        <div class="book-item" id="book-item0" style="display: none;">
+            <div class="card-header">
+                <div class="book-item-title" id="bookName0">Book Name 0</div>
+            </div>
+            <div class="card-body"> 
+                <img class="book-item-image" src="" alt="Book Image" id="bookImage0" >
+                <div class="card-description description" id="card-description0">
+                    This book is a very good book.
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Author:</span>
+                    <span class="card-description" id="author0">
+                        author name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Publisher:</span>
+                    <span class="card-description" id="publisher0">
+                        publisher name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Page Count:</span>
+                    <span class="card-description" id="page-count0">
+                        448
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer">
+                <a class="btn preview-btn" id="book-preview0"  href="https://www.google.com" target="_blank"> Go To Preview </a>
+            </div>
+        </div>
+
+        <div class="book-item" id="book-item1" style="display: none;">
+            <div class="card-header">
+                <div class="book-item-title" id="bookName1">Book Name 1</div>
+            </div>
+            <div class="card-body"> 
+                <img class="book-item-image" src="" alt="Book Image" id="bookImage1" >
+                <div class="card-description description" id="card-description1">
+                    This book is a very good book.
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Author:</span>
+                    <span class="card-description" id="author1">
+                        author name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Publisher:</span>
+                    <span class="card-description" id="publisher1">
+                        publisher name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Page Count:</span>
+                    <span class="card-description" id="page-count1">
+                        448
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer">
+                <a class="btn preview-btn" id="book-preview1" href="https://www.google.com" target="_blank"> Go To Preview </a>
+            </div>
+        </div>
+
+        <div class="book-item" id="book-item2" style="display: none;">
+            <div class="card-header">
+                <div class="book-item-title" id="bookName2">Book Name 2</div>
+            </div>
+            <div class="card-body"> 
+                <img class="book-item-image" src="" alt="Book Image" id="bookImage2" >
+                <div class="card-description description" id="card-description2">
+                    This book is a very good book.
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Author:</span>
+                    <span class="card-description" id="author2">
+                        author name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Publisher:</span>
+                    <span class="card-description" id="publisher2">
+                        publisher name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Page Count:</span>
+                    <span class="card-description" id="page-count2">
+                        448
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer">
+                <a class="btn preview-btn" id="book-preview2"  href="https://www.google.com" target="_blank"> Go To Preview </a>
+            </div>
+        </div>
+
+        <div class="book-item" id="book-item3" style="display: none;">
+            <div class="card-header">
+                <div class="book-item-title" id="bookName3">Book Name 3</div>
+            </div>
+            <div class="card-body"> 
+                <img class="book-item-image" src="" alt="Book Image" id="bookImage3" >
+                <div class="card-description description" id="card-description3">
+                    This book is a very good book.
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Author:</span>
+                    <span class="card-description" id="author3">
+                        author name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Publisher:</span>
+                    <span class="card-description" id="publisher3">
+                        publisher name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Page Count:</span>
+                    <span class="card-description" id="page-count3">
+                        448
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer">
+                <a class="btn preview-btn" id="book-preview3"  href="https://www.google.com" target="_blank"> Go To Preview </a>
+            </div>
+        </div>
+
+        <div class="book-item" id="book-item4" style="display: none;">
+            <div class="card-header">
+                <div class="book-item-title" id="bookName4">Book Name 4</div>
+            </div>
+            <div class="card-body"> 
+                <img class="book-item-image" src="" alt="Book Image" id="bookImage4" >
+                <div class="card-description description" id="card-description4">
+                    This book is a very good book.
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Author:</span>
+                    <span class="card-description" id="author4">
+                        author name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Publisher:</span>
+                    <span class="card-description" id="publisher4">
+                        publisher name
+                    </span>
+                </div>
+                <div class="attribute">
+                    <span class="card-description colored">Page Count:</span>
+                    <span class="card-description" id="page-count4">
+                        448
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer">
+                <a class="btn preview-btn" id="book-preview4"  href="https://www.google.com" target="_blank"> Go To Preview </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    
+</body>
+</html>
